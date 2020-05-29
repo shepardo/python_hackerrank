@@ -4,4 +4,5 @@ from itertools import permutations
 s, n = input().split(' ')
 l = list(permutations(list(s), int(n)))
 l.sort()
-[print('{0}{1}'.format(x[0], x[1])) for x in l]
+[print(''.join(x)) for x in l]
+
