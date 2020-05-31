@@ -7,5 +7,9 @@ for i in range(m):
     d[input()].append(i + 1)
 
 for i in range(n):
-    [print(x, end=' ') for x in d[input()]]
-    print('')
+    l = d[input()]
+    if len(l) > 0:
+        [print(x, end=' ') for x in l]
+        print('')
+    else:
+        print(-1)
